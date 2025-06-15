@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "/fixtures/today", to: "fixtures#today"
   get "/fixtures/:id", to: "fixtures#show"
+  get "/leagues/:id/standings", to: "fixtures#standings"
+  get "/leagues/:id/fixtures", to: "fixtures#league_fixtures"
 
   # Defines the root path route ("/")
   # root "posts#index"
