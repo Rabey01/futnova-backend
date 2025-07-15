@@ -1,3 +1,5 @@
+require "httparty"
+
 class FixturesController < ApplicationController
   require_dependency Rails.root.join("app/lib/league_code_map")
   include LeagueCodeMap
