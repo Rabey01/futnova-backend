@@ -1,24 +1,43 @@
-# README
+# Futnova API – Football Data Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Futnova API is the backend service for the Futnova football tracking app. Built with Ruby on Rails, it provides structured endpoints to fetch real-time football data including live fixtures, league standings, and detailed match information. This backend consumes third-party APIs and serves clean JSON data to the frontend.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## Live API
 
-* System dependencies
+- **Render Deployment**: [https://futnova-api.onrender.com](https://futnova-api.onrender.com)
 
-* Configuration
+> Note: This is a public API endpoint and does not serve a web interface. It is intended to be used by the Futnova frontend application.
 
-* Database creation
+---
 
-* Database initialization
+## Built With
 
-* How to run the test suite
+- Ruby on Rails 8  
+- HTTParty – for making API requests  
+- Rack CORS – to handle cross-origin requests  
+- dotenv-rails – for managing environment variables  
+- SQLite (development) / PostgreSQL (production)  
+- Deployed on Render  
 
-* Services (job queues, cache servers, search engines, etc.)
+---
 
-* Deployment instructions
+## Key Endpoints
 
-* ...
+- `GET /fixtures/today` – Fetch today's football fixtures  
+- `GET /fixtures/:id` – Get detailed information for a single match  
+- `GET /leagues/:id/standings` – Fetch current standings for a league  
+- `GET /leagues/:id/fixtures` – Get all matches for a league  
+
+---
+
+## Deployment
+
+The backend is hosted on [Render](https://render.com/), with automatic deployment from the connected GitHub repository. Ensure your API keys are correctly added in the **Environment** tab of your Render dashboard.
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
