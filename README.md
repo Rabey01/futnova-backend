@@ -35,9 +35,3 @@ Futnova API is the backend service for the Futnova football tracking app. Built 
 ## Deployment
 
 The backend is hosted on [Render](https://render.com/), with automatic deployment from the connected GitHub repository. Ensure your API keys are correctly added in the **Environment** tab of your Render dashboard.
-
----
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
